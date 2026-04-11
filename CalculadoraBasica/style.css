@@ -1,0 +1,57 @@
+.resultado-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.resultado-box h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.operacion {
+    font-size: 20px;
+    color: #555;
+}
+
+.igual {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.valor {
+    font-size: 35px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.error {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: #526acc;
+background: radial-gradient(circle, rgba(82, 106, 204, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 350px;
+}
