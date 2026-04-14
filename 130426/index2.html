@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de QR</title>
 </head>
 <body>
-    <header>
-        <h1>Generador de QR</h1>
-    </header>
-    <div>
-        <label for="nombre">Ingrese el texto para generar el QR:</label>
-        <input type="text" id="nombre" placeholder="Ingrese su nombre" required maxlength="100">
-        <br>
-        <label for="email">Ingrese su correo electrónico:</label>
-        <input type="email" id="email" placeholder="Ingrese su correo electrónico" required maxlength="150">
-        <br>
-        <label for="telefono">Ingrese su número de teléfono:</label>
-        <input type="tel" id="telefono" placeholder="Ingrese su número de teléfono" required maxlength="100">   
-        
-        <br>
-        <label for="Institucion">Seleccione su institución:</label>
-        <input type="text" id="Institucion" placeholder="Ingrese su institución" required maxlength="100" list="instituciones">
-        <datalist id="instituciones">
-            <option value="Universidad Nacional Autónoma de México">
-            <option value="Instituto de Oaxaca">
-            <option value="Instituto Tecnológico de Oaxaca">
-            <option value="Universidad del Valle de Oaxaca">
-        </datalist>
-        <br>
-        
 
-    </div>
-    <div style="text-align: center;" id="qr">
-    <button onclick="generarQR()">Generar QR</button>
-    
+<header>
+    <h1>Generador de QR</h1>
+</header>
 
+<div>
+    <label for="nombre">Ingrese su nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+
+    <br>
+
+    <label for="email">Ingrese su correo electrónico:</label>
+    <input type="email" id="email" placeholder="Ingrese su correo electrónico">
+
+    <br>
+
+    <label for="telefono">Ingrese su número de teléfono:</label>
+    <input type="tel" id="telefono" placeholder="Ingrese su número de teléfono">   
+
+    <br>
+
+    <label for="institucion">Seleccione su institución:</label>
+    <input type="text" id="institucion" placeholder="Ingrese su institución" list="instituciones">
+
+    <datalist id="instituciones">
+        <option value="Universidad Nacional Autónoma de México">
+        <option value="Instituto de Oaxaca">
+        <option value="Instituto Tecnológico de Oaxaca">
+        <option value="Universidad del Valle de Oaxaca">
+    </datalist>
 </div>
-    
-</body>
+
+<br>
+
+<!-- BOTÓN FUERA DEL QR -->
+<div style="text-align: center;">
+    <button onclick="generarQR()">Generar QR</button>
+</div>
+
+<!-- CONTENEDOR DEL QR -->
+<div style="text-align: center;" id="qr"></div>
+
 <script src="app2.js"></script>
+
+</body>
 </html>
