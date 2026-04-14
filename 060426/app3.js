@@ -1,4 +1,4 @@
-console.log(document.querySelector("#tituloID").textContent);
+console.log(document.querySelector("#tituloID").textContent); 
 
 const h1=document.querySelector("#tituloID");
 console.log(h1.className);
